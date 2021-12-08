@@ -13,8 +13,10 @@ server.all("*", (req, res, next) => {
     next();
 })
 
+const port = process.env.PORT || 3000;
+
 const keepAlive = () => {
-    server.listen(3000, () => {
+    server.listen(port, () => {
         consola.ready({
             message: "Server started on port 3000",
             badge: true
