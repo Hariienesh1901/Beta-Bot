@@ -11,11 +11,11 @@ server.get("/", (req, res) => {
     res.send("Beta server");
 })
 
-server.all("/", (req, res, next) => {
+/* server.all("/", (req, res, next) => {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     next();
-})
+}) */
 
 const port = process.env.PORT || 8080;
 
