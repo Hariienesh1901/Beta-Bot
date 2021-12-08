@@ -27,8 +27,13 @@ server.post("/router", (req, res) => {
         body: JSON.stringify({
             content: `${url} ${method} ${headers} ${body}`
         }),
-
     };
+    request(options, (error, response, body) => {
+        if (error) {
+            consola.error(error);
+        }
+        res.send(body);
+    });
 });
 
 server.all("/", (req, res, next) => {
