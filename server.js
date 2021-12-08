@@ -1,3 +1,7 @@
+if (process.env.NODE_ENV !== 'production') {
+    require("dotenv").config();
+}
+
 const express = require("express");
 const consola = require("consola");
 
@@ -13,7 +17,7 @@ server.all("/", (req, res, next) => {
     next();
 })
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 
 const keepAlive = () => {
     server.listen(port, () => {
