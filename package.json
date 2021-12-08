@@ -1,0 +1,21 @@
+{
+  "name": "Beta-Bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node .",
+    "devStart": "nodemon ."
+  },
+  "dependencies": {
+    "consola": "^2.15.3",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.0",
+    "mongoose-simple-random": "^0.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
