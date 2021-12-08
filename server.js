@@ -3,7 +3,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 const express = require("express");
-const request = require("request");
 const consola = require("consola");
 
 const server = express();
